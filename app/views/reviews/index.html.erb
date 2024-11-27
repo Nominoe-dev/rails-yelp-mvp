@@ -1,0 +1,8 @@
+<ul>
+  <% @reviews.each do |review| %>
+    <li><%= review.content %></li>
+    <li><%= review.rating %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new review", new_review_path, class: "btn btn-primary" %>
